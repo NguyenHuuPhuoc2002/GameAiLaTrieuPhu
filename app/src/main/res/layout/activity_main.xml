@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#20222D"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_gravity="center">
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginBottom="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp">
+
+        <ImageButton
+            android:id="@+id/imgaskaudience"
+            android:layout_width="77dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:background="#20222D"
+            app:srcCompat="@drawable/ask_audience" />
+
+        <ImageButton
+            android:id="@+id/img5050"
+            android:layout_width="70dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:background="#20222D"
+            app:srcCompat="@drawable/half5050" />
+
+        <ImageButton
+            android:id="@+id/imgcounsel"
+            android:layout_width="71dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:background="#20222D"
+            app:srcCompat="@drawable/counsel" />
+        <ImageButton
+            android:id="@+id/imgnext"
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:layout_height="50dp"
+            android:background="#20222D"
+            app:srcCompat="@drawable/next" />
+    </LinearLayout>
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_gravity="center"
+        android:padding="5dp"
+        app:srcCompat="@drawable/img" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:padding="2dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/textViewTimeLeft"
+            android:layout_width="4dp"
+            android:layout_height="58dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_time_answer_btn"
+            android:text="30"
+            android:textColor="@color/white"
+            android:textSize="25dp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/txtmonney"
+            android:layout_width="44dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="20dp"
+            android:layout_weight="4"
+            android:gravity="center"
+            android:background="@drawable/bg_customdialog"
+            android:padding="5dp"
+            android:text="Phước Đẹp Trai"
+            android:textColor="@color/white"
+            android:textSize="30dp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/txtcontent_question"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/bg_customdialog"
+            android:gravity="center"
+            android:paddingStart="10dp"
+            android:paddingTop="40dp"
+            android:paddingEnd="10dp"
+            android:paddingBottom="40dp"
+            android:text="Câu hỏi 1"
+            android:textColor="@color/white"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/txtquestion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Câu hỏi 1"
+            android:textStyle="bold"
+            android:background="@drawable/bg_customdialog"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:paddingStart="20dp"
+            android:textColor="@color/white"
+            android:paddingEnd="20dp"
+            android:textSize="20dp"
+            android:layout_centerHorizontal="true"/>
+
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/txtanswer1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:text="Answer 1"
+        android:textSize="20dp"
+        android:gravity="center"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/bg_time_answer_btn"/>
+    <TextView
+        android:id="@+id/txtanswer2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Answer 2"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:gravity="center"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/bg_time_answer_btn"/>
+    <TextView
+        android:id="@+id/txtanswer3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Answer 3"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:gravity="center"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/bg_time_answer_btn"/>
+    <TextView
+        android:id="@+id/txtanswer4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Answer 4"
+        android:textSize="20dp"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/bg_time_answer_btn"/>
+</LinearLayout>
